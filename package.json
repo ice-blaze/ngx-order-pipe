@@ -1,5 +1,5 @@
 {
-  "name": "ngx-order-pipe",
+  "name": "@ice-blaze/ngx-order-pipe",
   "version": "2.3.0",
   "description": "Angular order pipe, order collection by a field",
   "scripts": {
@@ -10,8 +10,9 @@
     "test:w": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
     "lint": "ng lint",
+    "postinstall": "ngcc",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p package.json",
+    "packagr": "ng-packagr -p package.json -c tsconfig.json",
     "docs": "ng build --prod --output-path docs --base-href ngx-order-pipe && cp ./docs/index.html ./docs/404.html"
   },
   "repository": {
